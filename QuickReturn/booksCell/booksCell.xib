@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="booksCell" rowHeight="104" id="KGk-i7-Jjw" customClass="booksCell" customModule="QuickReturn" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Made Easy with C++: A way to will" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwa-8H-wvg">
+                        <rect key="frame" x="19.999999999999986" y="10" width="235.66666666666663" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RD Sharma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztU-AQ-Qh2">
+                        <rect key="frame" x="20" y="37" width="69.333333333333329" height="15.666666666666664"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Condition: Only cover page is torn but pages intact adjlfk  lajsdklfkj lajsdflj" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDr-bc-haJ">
+                        <rect key="frame" x="20" y="56.666666666666657" width="180" height="50.333333333333343"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="180" id="Be1-Nf-P1q"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pg. 1200" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUw-jC-5ff">
+                        <rect key="frame" x="271.66666666666669" y="13.666666666666664" width="58.333333333333314" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckW-Kg-UsJ">
+                        <rect key="frame" x="236" y="64.333333333333329" width="94" height="35"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" image="book" catalog="system" title="13/31">
+                            <color key="baseBackgroundColor" red="0.92941176889999999" green="0.43921568989999998" blue="0.4196078479" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uwa-8H-wvg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="8Jx-g2-ET6"/>
+                    <constraint firstItem="ckW-Kg-UsJ" firstAttribute="trailing" secondItem="sUw-jC-5ff" secondAttribute="trailing" id="J9r-qF-JOy"/>
+                    <constraint firstItem="ztU-AQ-Qh2" firstAttribute="leading" secondItem="uwa-8H-wvg" secondAttribute="leading" id="O7F-fO-UqK"/>
+                    <constraint firstItem="ztU-AQ-Qh2" firstAttribute="top" secondItem="uwa-8H-wvg" secondAttribute="bottom" constant="3" id="TDe-pu-lxq"/>
+                    <constraint firstAttribute="trailing" secondItem="sUw-jC-5ff" secondAttribute="trailing" constant="20" symbolic="YES" id="VrY-5Z-91c"/>
+                    <constraint firstItem="sUw-jC-5ff" firstAttribute="centerY" secondItem="uwa-8H-wvg" secondAttribute="centerY" id="bOL-aY-BbI"/>
+                    <constraint firstItem="ckW-Kg-UsJ" firstAttribute="centerY" secondItem="vDr-bc-haJ" secondAttribute="centerY" id="eGl-UM-4kl"/>
+                    <constraint firstItem="vDr-bc-haJ" firstAttribute="top" secondItem="ztU-AQ-Qh2" secondAttribute="bottom" constant="4" id="jek-V3-gmo"/>
+                    <constraint firstItem="sUw-jC-5ff" firstAttribute="leading" secondItem="uwa-8H-wvg" secondAttribute="trailing" constant="16" id="jhf-hb-nbR"/>
+                    <constraint firstItem="uwa-8H-wvg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="qgC-aD-GcH"/>
+                    <constraint firstItem="vDr-bc-haJ" firstAttribute="leading" secondItem="uwa-8H-wvg" secondAttribute="leading" id="rdg-ra-l8l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="authorOfBook" destination="ztU-AQ-Qh2" id="5FB-99-kiR"/>
+                <outlet property="availableButtonAsLabel" destination="ckW-Kg-UsJ" id="YyY-4A-NQL"/>
+                <outlet property="descriptionLabel" destination="vDr-bc-haJ" id="1b6-95-yMb"/>
+                <outlet property="nameBookLabel" destination="uwa-8H-wvg" id="jFt-jn-WwH"/>
+                <outlet property="pagesLabel" destination="sUw-jC-5ff" id="Xth-vg-SjU"/>
+            </connections>
+            <point key="canvasLocation" x="106.87022900763358" y="11.267605633802818"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="book" catalog="system" width="128" height="99"/>
+    </resources>
+</document>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="issue_cell" rowHeight="90" id="KGk-i7-Jjw" customClass="issuedCell" customModule="QuickReturn" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="351" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Engineering Graphics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Kb-VQ-bDc">
+                        <rect key="frame" x="20" y="10" width="170" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Issued On: 12/11/2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkk-58-rf7">
+                        <rect key="frame" x="20" y="32" width="116" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sf-Sb-fst">
+                        <rect key="frame" x="249" y="12" width="82" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="82" id="ABF-Vc-NsC"/>
+                            <constraint firstAttribute="height" constant="27" id="JRJ-rb-gKK"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Return">
+                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="13"/>
+                            <color key="baseBackgroundColor" red="0.92941176889999999" green="0.43921568989999998" blue="0.4196078479" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </buttonConfiguration>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBound" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="returnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="uCW-Ce-x6Y"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAc-Nw-jwa">
+                        <rect key="frame" x="249" y="48.333333333333336" width="82" height="29.666666666666664"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Re-Issue">
+                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="13"/>
+                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="baseBackgroundColor" red="0.36078432199999999" green="0.78823530669999997" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </buttonConfiguration>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBound" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="reissueAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dXq-8c-Pw4"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Return by : 09/12/2025" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkZ-Ru-YVG">
+                        <rect key="frame" x="20" y="47" width="146" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                        <color key="textColor" red="0.35294117650000001" green="0.64313725489999995" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days left - 90" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8J3-mO-rP6">
+                        <rect key="frame" x="20" y="63" width="88" height="17"/>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.04677283753" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jkZ-Ru-YVG" firstAttribute="top" secondItem="Dkk-58-rf7" secondAttribute="bottom" constant="1" id="5l3-zk-iuR"/>
+                    <constraint firstItem="tAc-Nw-jwa" firstAttribute="height" secondItem="9sf-Sb-fst" secondAttribute="height" multiplier="1.09877" id="6wP-hN-xcD"/>
+                    <constraint firstItem="3Kb-VQ-bDc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="I4S-Hn-pxo"/>
+                    <constraint firstItem="Dkk-58-rf7" firstAttribute="leading" secondItem="3Kb-VQ-bDc" secondAttribute="leading" id="JIb-BR-38h"/>
+                    <constraint firstAttribute="trailing" secondItem="9sf-Sb-fst" secondAttribute="trailing" constant="20" id="Mns-lr-PaN"/>
+                    <constraint firstAttribute="bottom" secondItem="8J3-mO-rP6" secondAttribute="bottom" constant="10" id="NW0-pr-vcF"/>
+                    <constraint firstAttribute="bottom" secondItem="tAc-Nw-jwa" secondAttribute="bottom" constant="12" id="Q8c-bN-qTM"/>
+                    <constraint firstItem="8J3-mO-rP6" firstAttribute="leading" secondItem="3Kb-VQ-bDc" secondAttribute="leading" id="QdG-y2-bdF"/>
+                    <constraint firstItem="9sf-Sb-fst" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="XI4-ly-HbQ"/>
+                    <constraint firstAttribute="trailing" secondItem="tAc-Nw-jwa" secondAttribute="trailing" constant="20" symbolic="YES" id="ZVI-la-F33"/>
+                    <constraint firstItem="Dkk-58-rf7" firstAttribute="top" secondItem="3Kb-VQ-bDc" secondAttribute="bottom" constant="1" id="ZgZ-HS-8qY"/>
+                    <constraint firstItem="tAc-Nw-jwa" firstAttribute="centerX" secondItem="9sf-Sb-fst" secondAttribute="centerX" id="gCw-qK-pqW"/>
+                    <constraint firstItem="tAc-Nw-jwa" firstAttribute="width" secondItem="9sf-Sb-fst" secondAttribute="width" id="jEt-CI-rTm"/>
+                    <constraint firstItem="8J3-mO-rP6" firstAttribute="top" secondItem="jkZ-Ru-YVG" secondAttribute="bottom" id="o67-Bz-ZSz"/>
+                    <constraint firstItem="jkZ-Ru-YVG" firstAttribute="leading" secondItem="3Kb-VQ-bDc" secondAttribute="leading" id="sHj-de-3iE"/>
+                    <constraint firstItem="3Kb-VQ-bDc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="zEs-vP-qDn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="IssueDateLabel" destination="Dkk-58-rf7" id="l0h-Oc-qnE"/>
+                <outlet property="bookLabel" destination="3Kb-VQ-bDc" id="ag6-PI-slP"/>
+                <outlet property="daysLeftLabel" destination="8J3-mO-rP6" id="xhx-sp-4eI"/>
+                <outlet property="returnLabel" destination="jkZ-Ru-YVG" id="T9I-IC-1Vf"/>
+            </connections>
+            <point key="canvasLocation" x="106.10687022900763" y="4.9295774647887329"/>
+        </tableViewCell>
+    </objects>
+</document>
